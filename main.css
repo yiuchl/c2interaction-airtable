@@ -53,15 +53,17 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    -webkit-filter: blur(0.5px);
+    color: #3E3A2E;
+    /* -webkit-filter: blur(0.5px);
     filter: blur(2px);
     text-shadow: rgb(255, 183, 0) 0px 0 15px;
-    color: rgb(244, 74, 31);
+    color: rgb(244, 74, 31); */
 }
 
 a:active {
     text-decoration: none;
-    color: rgb(206, 47, 7);
+    color: #3E3A2E;
+    /* color: rgb(206, 47, 7); */
 }
 
 #space:hover {

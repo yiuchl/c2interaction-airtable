@@ -166,9 +166,9 @@ button:hover {
     color: rgb(205, 66, 31); */
 }
 
-a {
+/* a {
     font-size: 1.5rem;
-}
+} */
 
 a:link {
     text-decoration: none;
@@ -295,6 +295,7 @@ img {
     /* grid-row-start: 2;
     grid-row-end: 3; */
     padding-bottom: 1%;
+    font-size: 1.5rem;
 }
 
 /* .column-image {

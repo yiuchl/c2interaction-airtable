@@ -95,63 +95,6 @@ function ShowHideFilter(e) {
     });
 };
 
-// FILTER
-// //Condense Filters into one function
-// //by checking the clicked filter type
-// function ShowHideFilter(e) {
-//   console.log("e", e.target.dataset.filter);
-//   let listofAirtableItems = document.querySelectorAll("div.airtable-item");
-//   listofAirtableItems.forEach(function (item) {
-//     // if div matches the id of the button, show div, otherwise, hide
-//     if (e.target.dataset.filter == "type") {
-//       console.log("type");
-//       if (e.target.dataset.value == item.dataset.type) {
-//         item.classList.remove("hidden");
-//       } else {
-//         item.classList.add("hidden");
-//       }
-//     } else if (e.target.dataset.filter == "shape") {
-//       if (e.target.dataset.value == item.dataset.shape) {
-//         item.classList.remove("hidden");
-//       } else {
-//         item.classList.add("hidden");
-//       }
-//     } else if (e.target.dataset.filter == "feel") {
-//       if (e.target.dataset.value == item.dataset.feel) {
-//         item.classList.remove("hidden");
-//       } else {
-//         item.classList.add("hidden");
-//       }
-//     } else if (e.target.dataset.filter == "material") {
-//       if (e.target.dataset.value == item.dataset.material) {
-//         item.classList.remove("hidden");
-//       } else {
-//         item.classList.add("hidden");
-//       }
-//     } else if (e.target.dataset.filter == "smoke") {
-//       if (e.target.dataset.value == item.dataset.smoke) {
-//         item.classList.remove("hidden");
-//       } else {
-//         item.classList.add("hidden");
-//       }
-//     } else {
-//       item.classList.add("hidden");
-//     }
-//   });
-// }
-
-//RESET FILTERS
-// find the reset button
-let resetBtn = document.querySelector(".btn-reset");
-
-//attach a click listener to the button
-resetBtn.addEventListener("click", () => {
-    // remove the hidden class on all items
-    listofAirtableItems.forEach(function (item) {
-        item.classList.remove("filter-hide");
-    });
-});
-
 // SMOKE ANIMATION
 let spans = document.querySelectorAll('span');
 

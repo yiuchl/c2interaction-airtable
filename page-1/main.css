@@ -8,10 +8,8 @@ html {
     width: 100%;
     margin: 0;
     font-size: 1rem;
-    /* font-family: 'Newsreader', Georgia, Times, 'Times New Roman', serif; */
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 .wrapper {
@@ -105,12 +103,6 @@ ul {
     font-size: 2rem;
 }
 
-.btn-reset {
-    color: #3E3A2E;
-    text-transform: lowercase;
-    font-size: 1.5rem;
-}
-
 li {
     font-size: 1.5rem;
     color: #3E3A2E;
@@ -132,11 +124,7 @@ details>summary {
 }
 
 details>summary::marker,
-/* Latest Chrome, Edge, Firefox */
-details>summary::-webkit-details-marker
-
-/* Safari */
-    {
+details>summary::-webkit-details-marker {
     display: none;
 }
 
@@ -150,7 +138,7 @@ button {
     /* padding: 0.15em; */
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
+    display: inline-block;
     color: #3E3A2E;
     text-transform: lowercase;
     font-size: 1em;
@@ -159,11 +147,7 @@ button {
 
 button:hover {
     -webkit-filter: blur(0.5px);
-    /* Chrome, Safari, Opera */
     filter: blur(0.5px);
-    /* text-shadow: rgb(255, 183, 0) 0px 0 15px;
-    color: rgb(244, 74, 31);
-    color: rgb(205, 66, 31); */
 }
 
 /* a {
@@ -195,10 +179,7 @@ a:active {
 
 summary:hover {
     -webkit-filter: blur(0.5px);
-    /* Chrome, Safari, Opera */
     filter: blur(0.5px);
-    /* text-shadow: rgb(255, 183, 0) 0px 0 15px;
-    color: rgb(206, 47, 7); */
 }
 
 #space:hover {
@@ -220,10 +201,10 @@ summary:hover {
 
 /* Smoked Letters Animation */
 .smoked span.active {
-    animation: smokeLetters 2s linear forwards;
+    animation: smoked 2s linear forwards;
 }
 
-@keyframes smokeLetters {
+@keyframes smoked {
     0% {
         opacity: 1;
         filter: blur(0px);
@@ -288,7 +269,14 @@ img {
     text-align: center;
     align-items: center;
     /* border-top: 1px solid var(--grey); */
+    /* transition: 0.3s;
+    filter: blur(5px); */
+
 }
+
+/* .content-container:hover {
+    filter: blur(0);
+} */
 
 .footer {
     /* flex-shrink: 0; */
@@ -299,16 +287,15 @@ img {
 }
 
 /* .column-image {
-    width: 70%;
-    height: 100vh;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    flex: 4 1 0%;
-    position: relative;
-    outline: none;
-  } */
+    -webkit-filter: blur(5px);
+    filter:blur(5px)
+}
+
+.column-image:hover{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+} */
+
 
 /* .column-image div {
     width: 100%;
@@ -383,11 +370,6 @@ img {
     .opening-text {
         display: none;
     }
-
-    /* ul {
-        display:contents;
-        position: relative;
-    } */
 
     img {
         width: 100%;

@@ -52,6 +52,7 @@ a:hover {
     color: #3E3A2E;
     -webkit-filter: blur(1px);
     filter: blur(1px);
+    transition: filter 0.25s linear;
 }
 
 a:active {
@@ -59,6 +60,7 @@ a:active {
     color: #3E3A2E;
     -webkit-filter: blur(1px);
     filter: blur(1px);
+    transition: filter 0.25s linear;
 }
 
 #space:hover {

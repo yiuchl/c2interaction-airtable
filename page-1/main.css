@@ -213,6 +213,7 @@ img {
     height: 80vh;
     -webkit-filter: blur(4px);
     filter: blur(4px);
+    transition: 1000ms ease;
 }
 
 .airtable-item--image:hover {
